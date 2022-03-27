@@ -67,7 +67,7 @@
     "fs": "^0.0.2",
     "lodash": "^4.17.11",
     "path": "^0.12.7",
-    "path-exists": "^4.0.0",
+    "path-exists": "^5.0.0",
     "shelljs": "^0.8.3"
   },
   "files": [
