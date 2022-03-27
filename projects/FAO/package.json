@@ -60,7 +60,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@groceristar/food-dataset-csv-parser": "^0.2.4",
+    "@groceristar/food-dataset-csv-parser": "^0.3.0",
     "@groceristar/sd-wrapper": "^4.10.0",
     "@groceristar/static-data-generator": "^1.1.4",
     "lodash": "^4.17.11",
