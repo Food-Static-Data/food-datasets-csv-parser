@@ -70,4 +70,4 @@ const joinPath = (arr, useResolve = false) => {
   return join(...arr);
 };
 
-export { readAllFiles, joinPath, getList };
+export default { readAllFiles, joinPath, getList };

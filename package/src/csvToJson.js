@@ -22,18 +22,22 @@ const assign = async (fileInfo, dataEntries, size = 1000) => {
   // @TODO add if env.development and use console.log(xxx)
   const maxEntriesPerFile = size;
   const fileCount = Math.ceil(dataEntries.length / maxEntriesPerFile);
+  // ********
   let start;
   let stop;
   const tmpFile = fileInfo;
   const savedFileName = fileInfo[1];
+
   // @TODO it's looking so complex.
   for (let i = 0; i < fileCount; i += 1) {
     start = i * maxEntriesPerFile;
+    // ********
     if (i + 1 === fileCount) {
       stop = dataEntries.length - 1;
     } else {
       stop = (i + 1) * maxEntriesPerFile - 1;
     }
+    // ********
     const jsonObjects = dataEntries.slice(start, stop);
     tmpFile[1] += `-${i}`; // add i to file name
     generateJsonFile(fileInfo, jsonObjects);

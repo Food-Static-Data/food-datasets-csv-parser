@@ -1,8 +1,7 @@
 import { readDir } from '@groceristar/static-data-generator';
 
-
 // eslint-disable-next-line no-shadow
-async function helper(dirPath) {
+async function helper(dirPath, csvFiles) {
   if (dirPath.includes('.json') || dirPath.includes('.md')) return;
 
   const folders = await readDir(dirPath);
@@ -12,7 +11,7 @@ async function helper(dirPath) {
     if (name.includes('.csv')) {
       csvFiles.push({
         filename: name,
-        dirPath
+        dirPath,
       });
     }
   });
