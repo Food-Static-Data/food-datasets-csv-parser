@@ -37,6 +37,9 @@ You can find how we execute this script at package.json
 
 below is a list to script that executing parser for different CSV files that we have.
 
+
+## note:rename USFA to USDA
+
 ```
 "csv:usfa1" - USFA/Derivation_Code_Description
 "csv:usfa2" - USFA/Nutrition
